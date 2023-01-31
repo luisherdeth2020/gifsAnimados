@@ -1,0 +1,17 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: CerebriSans-Bold, -apple-system, system-ui, Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: hsl(45, 100%, 53%);
+}
+
+input {
+  background: transparent;
+  outline: none;
+}
