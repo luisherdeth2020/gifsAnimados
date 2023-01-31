@@ -32,7 +32,7 @@ function Search({ setGifsList }) {
                 <input
                     className={`${styles.search__input} ${errorMessage.show && styles.search__error}`}
                     type="text"
-                    maxLength="12"
+                    maxLength="13"
                     autoFocus
                     placeholder="Search Giphy"
                     aria-label="Search Giphys"
@@ -47,4 +47,3 @@ function Search({ setGifsList }) {
     );
 }
 export default Search;
-// Deuda técnica

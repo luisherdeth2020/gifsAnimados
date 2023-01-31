@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import ListGifs from '../components/ListGifs';
 import Search from '../components//Search';
 import { fetchData } from '../api/fetchData';

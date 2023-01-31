@@ -1,8 +1,8 @@
 function getArray(item) {
-    const gifs = item.map((figura) => ({
-        url: figura.images.downsized_medium.url,
-        title: figura.title,
-        id: figura.id,
+    const gifs = item.map((gif) => ({
+        url: gif.images.downsized_medium.url,
+        title: gif.title,
+        id: gif.id,
     }));
 
     return gifs;

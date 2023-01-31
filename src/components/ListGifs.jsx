@@ -7,6 +7,7 @@ const ListGifs = ({ gifsList }) => {
     return (
         <div className={styles.container}>
             <div className={styles.container__list}>
+                {/* ? --> "optional chaining", lo que hace es que simplemente no peta si el objeto o la función que estoy intentando acceder no existe (en este caso si giftList no existe, osea si es null o undefined) */}
                 {gifsList?.map((item) => (
                     <div key={item.id} className={styles.container__gifs}>
                         <img src={item.url} alt={item.title} />
@@ -14,7 +15,7 @@ const ListGifs = ({ gifsList }) => {
                         <ShareButton itemUrl={item.url} />
                     </div>
                 ))}
-                {noResults && <p className={styles.notFound}>No se ha encontrado ningún gif con esa búsqueda</p>}
+                {noResults && <p className={styles.notFound}>No se ha encontrado ningún gif con esa búsqueda 😕</p>}
             </div>
         </div>
     );
